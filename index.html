@@ -30,12 +30,12 @@
     <body>
         <div id="main">
           <div id="prev" onclick="Book.prevPage();" class="arrow">‹</div>
-          <div id="area" class = "book"></div>
+          <div id="area"></div>
           <div id="next" onclick="Book.nextPage();" class="arrow">›</div>
         </div>
 
         <script>
-            Book.renderTo("area");
+            Book.renderTo("area", {width: 600, height: 400});
         </script>
     </body>
 </html>
