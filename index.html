@@ -15,12 +15,32 @@
         <!-- Zip JS -->
         <script src="./build/zip.min.js"></script>
         
-          <style type="text/css">
-            .book {
-                height:1250px;
-                width:500px;
-            }
-          </style>
+        <style type="text/css">
+          body {
+            overflow: auto;
+            background: #eee;
+          }
+
+          #wrapper {
+            width: 480px;
+            height: 640px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 0 5px 5px 0;
+          }
+
+          #area {
+            width: 480px;
+            height: 650px;
+            margin: -5px auto;
+            -moz-box-shadow:      inset 10px 0 20px rgba(0,0,0,.1);
+            -webkit-box-shadow:   inset 10px 0 20px rgba(0,0,0,.1);
+            box-shadow:           inset 10px 0 20px rgba(0,0,0,.1);
+            padding: 40px 40px;
+          }
+        </style>
         
         <script>
             "use strict";
