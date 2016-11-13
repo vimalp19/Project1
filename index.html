@@ -24,9 +24,11 @@
         
         <script>
             "use strict";
-            var Book = ePub("./reader/moby-dick.epub");
-            var rendition = book.renderTo("area", {width: 1000, height: 1000});
-            var displayed = rendition.display();
+            var Book = ePub("./reader/moby-dick.epub" {
+              width: 400,
+              height: 600,
+              spreads : false
+            });               
         </script>
     </head>
     <body>
