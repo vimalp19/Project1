@@ -50,7 +50,7 @@
                     $("#assignmentForm form #cancelOrContinue div").append('<label id="cancel" class="checkbox-inline" for="cancelAssignment"></label>');  
                     $("#assignmentForm form #cancelOrContinue div #cancel").append('<input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel">');
                     
-                    $("#assignmentForm form #cancelOrContinue div #add #addquestion").one ('click', function(){
+                    $("#addquestion").one ('click', function(){
                         $("#assignmentForm form").append('<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5 form-group btn-group-vertical" id="questionOptions">');
                         $("assignmentForm form #questionOptions").append('<button type="button" class="btn btn-success">New Question</button>');
                         $("assignmentForm form #questionOptions").append('<button type="button" class="btn btn-success">Pre-reading Question</button>');
