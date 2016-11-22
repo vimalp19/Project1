@@ -30,8 +30,8 @@
         
         <script>                    
             $(document).ready(function(){
+                //Function to display contents for creating new assignment
                 $("#assignment").one ('click', function(){
-                    //$(".form-horizontal").toggle(); 
                     $("#assignmentForm").append('<form class="form-horizontal"></form>');
                     $("#assignmentForm form").append('<div class="form-group" id="addAssignmentName"></div>');
                     $("#assignmentForm form #addAssignmentName").append('<label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>');
@@ -47,6 +47,11 @@
                     $("#assignmentForm form #cancelAssignment").append('<div class="col-xs-8 col-xs-offset-2"></div>');
                     $("#assignmentForm form #cancelAssignment div").append('<label class="checkbox-inline" for="cancelAssignment"></label>');
                     $("#assignmentForm form #cancelAssignment div label").append('<input class="btn btn-success" type="button" name="cancel" id="cancel" value="Cancel">');
+                });
+                
+                //Function to hide new assignment details when canceled by the user
+                $("#cancelAssignment").click(function(){
+                    $("#assignmentForm").show();
                 });
             });
         </script>
