@@ -76,11 +76,11 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="container-fluid">
-            <div id="prev" onclick="book.prevPage();" class="reader col-xs-2 col-sm-2 col-lg-2">Back</div>
+            <div id="prev" onclick="book.prevPage();" class="reader col-xs-2 col-sm-2 col-lg-1">Back</div>
 
-            <div id="area" class = "reader col-xs-8 col-sm-8 col-lg-8"></div>
+            <div id="area" class = "reader col-xs-8 col-sm-8 col-lg-10"></div>
 
-            <div id="next" onclick="book.nextPage();" class="reader col-xs-2 col-sm-2 col-lg-2">Next</div>
+            <div id="next" onclick="book.nextPage();" class="reader col-xs-2 col-sm-2 col-lg-1">Next</div>
         </div>
         <script>
             Book.renderTo("area");
@@ -90,7 +90,7 @@
         
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-4 col-xs-offset-4" align="center">
+                <div class="col-xs-4 col-xs-offset-4">
                     <button id="createNewAssignment" type="button" class="btn btn-success btn-lg">Create New Assignment</button>
                 </div>
             </div>
