@@ -34,9 +34,11 @@ footer {
 }
 
 .reader {
-    height: 500px;
+    /*height: 500px;*/
     text-align: center;
     vertical-align: middle;
+    min-height: 100px;
+    overflow: hidden;
 }
 
 .navbar-custom {
