@@ -39,6 +39,7 @@ footer {
     vertical-align: middle;
     min-height: 100px;
     overflow: hidden;
+    font-size: 75px;
 }
 
 .navbar-custom {
