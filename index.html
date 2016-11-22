@@ -35,6 +35,9 @@
                     $("#assignmentForm").append('<form class="form-horizontal"></form>');
                     $("#assignmentForm form").append('<div class="form-group" id="addAssignmentName"></div>');
                     $("#assignmentForm form #addAssignmentName").append('<label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>');
+                    $("#assignmentForm form #addAssignmentName").append('<div class="col-xs-6 col-md-4 col-lg-3"></div>');
+                    $("#assignmentForm form #addAssignmentName div").append('<input id="assignmentName" name="assignmentName" type="text" placeholder="Assignment Name" class="form-control input-md" required="">');
+                    
                 });
             });
         </script>
@@ -101,7 +104,7 @@
                 </div>
             </div>
             
-            <br><br>
+            <br>
             
             <div class="row" id="assignmentForm">
                 
