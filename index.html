@@ -43,10 +43,14 @@
                     $("#assignmentForm form #addAssignmentDescription").append('<div class="col-xs-6 col-md-4 col-lg-3"></div>');
                     $("#assignmentForm form #addAssignmentDescription div").append('<input id="assignmentDescription" name="assignmentDescription" type="text" placeholder="Assignment Description" class="form-control input-md" required="">');
                     
-                    $("#assignmentForm form").append('<div class="form-group" id="cancelAssignment"></div>');
+                    $("#assignmentForm form").append('<div class="form-group" id="continueOrCancel"></div>');
                     $("#assignmentForm form #cancelAssignment").append('<div class="col-xs-8 col-xs-offset-2"></div>');
                     $("#assignmentForm form #cancelAssignment div").append('<label class="checkbox-inline" for="cancelAssignment"></label>');
-                    $("#assignmentForm form #cancelAssignment div label").append('<input class="btn btn-success" type="button" name="cancel" id="cancel" value="Cancel">');
+                    $("#assignmentForm form #cancelAssignment div label").append('<input class="btn btn-success" type="button" name="cancelAssignment" id="cancelAssignment" value="Cancel">');
+                    $("#assignmentForm form #cancelAssignment div").append('<label id="addquestion" class="checkbox-inline" for="addQuestion"></label>');
+                    $("#assignmentForm form #cancelAssignment div #addquestion").append('<input class="btn btn-success" type="button" name="addQuestion" id="addQuestion" value="Add Question">');
+                    
+                    
                 });
                 
                 //Function to hide new assignment details when canceled by the user
@@ -139,14 +143,17 @@
                         </div>
                     </div>
 
-                    <div class="form-group" id="cancelAssignment">
+                    <div class="form-group" id="continueOrCancel">
                         <div class="col-xs-8 col-xs-offset-2">
                             <label class="checkbox-inline" for="cancelAssignment">
-                                <input class="btn btn-success" type="button" name="cancel" id="cancel" value="Cancel">
+                                <input class="btn btn-success" type="button" name="cancelAssignment" id="cancelAssignment" value="Cancel">
+                            </label>
+                            <label class="checkbox-inline" for="addQuestion">
+                                <input class="btn btn-success" type="button" name="addQuestion" id="addQuestion" value="Add Question">
                             </label>
                         </div>
                     </div>
- 
+
                 </form>
                 -->
 
