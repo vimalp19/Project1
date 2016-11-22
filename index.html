@@ -30,7 +30,7 @@
         
         <script>                    
             $(document).ready(function(){
-                $("#assignment").click(function(){
+                $("#assignment").once ('click', function(){
                     //$(".form-horizontal").toggle(); 
                     $("#assignmentForm").append('<form class="form-horizontal"></form>');
                     $("#assignmentForm form").append('<div class="form-group" id="addAssignmentName"></div>');
