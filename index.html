@@ -30,7 +30,7 @@
         
         <script>                    
             $(document).ready(function(){
-                $("#newAssignment").click(function(){
+                $("#assignment").click(function(){
                     $(".form-horizontal").toggle();
                 });
             });
@@ -113,7 +113,7 @@
                     
                     <!-- Assignment Name -->
                     <div class="form-group">
-                        <label class="col-xs-4 col-xs-offset-1 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>
+                        <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>
                             <div class="col-xs-6 col-md-4 col-lg-3">
                             <input id="assignmentName" name="assignmentName" type="text" placeholder="Assignment Name" class="form-control input-md" required="">
                         </div>
@@ -129,8 +129,8 @@
                     
                     <!-- Assignment Description -->
                     <div class="form-group">
-                        <label class="col-xs-2 col-xs-offset-3 control-label" for="assignmentDescription">Description:</label>
-                            <div class="col-xs-4 col-lg-3">
+                        <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentDescription">Description:</label>
+                            <div class="col-xs-6 col-md-4 col-lg-3">
                             <input id="assignmentDescription" name="assignmentDescription" type="text" placeholder="Assignment Description" class="form-control input-md" required="">
                         </div>
                     </div>
