@@ -45,10 +45,10 @@
                     
                     $("#assignmentForm form").append('<div class="form-group" id="cancelAssignment"></div>');
                     $("#assignmentForm form #cancelAssignment").append('<div class="col-xs-8 col-xs-offset-2"></div>');
-                    $("#assignmentForm form #cancelAssignment div").append('<label class="checkbox-inline" for="cancelAssignment"></label>');
-                    $("#assignmentForm form #cancelAssignment div label").append('<input class="btn btn-success" type="button" name="cancel" id="cancel" value="Cancel">');
-                    $("#assignmentForm form #cancelAssignment div").append('<label class="checkbox-inline" for="addQuestion"></label>');
-                    //$("#assignmentForm form #cancelAssignment div label").append('<input class="btn btn-success" type="button" name="cancel" id="cancel" value="Cancel">');
+                    $("#assignmentForm form #cancelAssignment div").append('<label id="cancel" class="checkbox-inline" for="cancelAssignment"></label>');
+                    $("#assignmentForm form #cancelAssignment div #cancel").append('<input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel">');
+                    $("#assignmentForm form #cancelAssignment div").append('<label id="add" class="checkbox-inline" for="addQuestion"></label>');
+                    $("#assignmentForm form #cancelAssignment div #add").append('<input class="btn btn-success" type="button" name="addquestion" id="addquestion" value="Add Question">');
                 });
             });
         </script>
