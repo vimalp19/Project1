@@ -32,10 +32,9 @@
             $(document).ready(function(){
                 $("#assignment").click(function(){
                     //$(".form-horizontal").toggle(); 
-                    $(".form-horizontal").append("
-                    
-                                                        
-                    ");
+                    $("#assignmentForm").append('<form class="form-horizontal"></form>');
+                    $("#assignmentForm form").append('<div class="form-group" id="addAssignmentName"></div>');
+                    $("#assignmentForm form #addAssignmentName").append('<label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>');
                 });
             });
         </script>
@@ -105,9 +104,11 @@
             <br><br>
             
             <div class="row" id="assignmentForm">
+                
+                <!--
                 <form class="form-horizontal">
                 
-                    <div class="form-group">
+                    <div class="form-group" id="addAssignmentName">
                         <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label>
                             <div class="col-xs-6 col-md-4 col-lg-3">
                             <input id="assignmentName" name="assignmentName" type="text" placeholder="Assignment Name" class="form-control input-md" required="">
@@ -130,6 +131,8 @@
                     </div>
  
                 </form>
+                -->
+
             </div>
         </div>
         
