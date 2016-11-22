@@ -48,6 +48,8 @@
                     $("#assignmentForm form #cancelOrContinue div").append('<label id="add" class="checkbox-inline" for="addQuestion"></label>');
                     $("#assignmentForm form #cancelOrContinue div #add").append('<input class="btn btn-success" type="button" name="addquestion" id="addquestion" value="Add Question">');
                     $("#assignmentForm form #cancelOrContinue div").append('<label id="cancel" class="checkbox-inline" for="cancelAssignment"></label>');  
+                    $("#assignmentForm form #cancelOrContinue div #cancel").append('
+                    <input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel">');
                 });
                 
                 $("#assignmentForm form #cancelOrContinue div #add #addquestion").one ('click', function(){
