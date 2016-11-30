@@ -37,24 +37,28 @@
                 var test = $('<p>HELLO</p>');
                 
                 $("#assignment").one ('click', function(){
-                    //$("#assignmentForm").append(assignmentName);
-                    //$("#assignmentForm").append(assignmentDescription);
-                    //$("#assignmentForm").append(assignmentButtons);
                     
+                    //On the click of the 'New Assignment' Button, add the following:
                     $(assignmentName).appendTo("#assignmentForm");
                     $(assignmentDescription).appendTo("#assignmentForm");
                     $(assignmentButtons).appendTo("#assignmentForm");
                     
                     
+                    //On the click of the 'Add Question' button, add the following:
                     $("input#addquestion").one ('click', function(){
-                        //$("#assignmentForm").append(test);
                         $(test).appendTo("#assignmentForm");
                     });
                     
+                    
+                    //On the click of the 'Cancel' button, remove the following:
+                    $("input#cancelassignment).one ('click', function(){
+                        $("#addAssignmentName").hide();
+                        $("addAssignmentDescription").hide();
+                        $("cancelOrContinue").hide();
+                    });
+  
                 });
-                
-
-                
+  
             });
         </script>
         
