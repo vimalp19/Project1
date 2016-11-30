@@ -46,37 +46,37 @@
                         
                 $("#assignment").click (function(){
                     
-                    if (showAssignmentDetails == 0) {
+                    //if (showAssignmentDetails == 0) {
                         
                         $(assignmentName).appendTo("#assignmentForm");
                         $(assignmentDescription).appendTo("#assignmentForm");
                         $(assignmentButtons).appendTo("#assignmentForm");
                         
                         showAssignmentDetails = 1;
-                    }
+                    //}
                 
                     
-                /*On the click of the 'Add Question' button, add the following:
-                $(".btn-success").one ('click', function(){
-                    var id = $(this).attr('id');
+                    //On the click of the 'Add Question' button, add the following:
+                    $(".btn-success").one ('click', function(){
+                        var id = $(this).attr('id');
                     
-                    $("#questionOptions").hide();
+                        $("#questionOptions").hide();
                     
-                    if (id == "new")
-                        $(newQuestion).appendTo("#assignmentForm");
+                        if (id == "new")
+                            $(newQuestion).appendTo("#assignmentForm");
                         
-                    else if (id == "pre")
-                        $(prereadingQuestion).appendTo("#assignmentForm");
+                        else if (id == "pre")
+                            $(prereadingQuestion).appendTo("#assignmentForm");
                         
-                    else if (id == "during")
-                        $(duringreadingQuestion).appendTo("#assignmentForm");
+                        else if (id == "during")
+                            $(duringreadingQuestion).appendTo("#assignmentForm");
                         
-                    else
-                        $(postreadingQuestion).appendTo("#assignmentForm");
+                        else
+                            $(postreadingQuestion).appendTo("#assignmentForm");
                     
-                    $(answer).appendTo("#assignmentForm");
-                });
-                */
+                        $(answer).appendTo("#assignmentForm");
+                    });
+               
                     
                     //On the click of the 'Cancel' button, remove the following:
                     $("input#cancelassignment").click (function(){
