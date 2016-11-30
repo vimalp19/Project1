@@ -54,7 +54,7 @@
                         
                         showAssignmentDetails = 1;
                     }
-                });
+                
                     
                 /*On the click of the 'Add Question' button, add the following:
                 $(".btn-success").one ('click', function(){
@@ -78,16 +78,16 @@
                 });
                 */
                     
-                //On the click of the 'Cancel' button, remove the following:
-                $("input#cancelassignment").click (function(){
+                    //On the click of the 'Cancel' button, remove the following:
+                    $("input#cancelassignment").click (function(){
                     
-                    $("#addAssignmentName").hide();
-                    $("#addAssignmentDescription").hide();
-                    $("#cancelOrContinue").hide();
+                        $("#addAssignmentName").hide();
+                        $("#addAssignmentDescription").hide();
+                        $("#cancelOrContinue").hide();
                     
-                    showAssignmentDetails = 0;
-                });
-                     
+                        showAssignmentDetails = 0;
+                    });   
+                }); 
             });
         </script>
         
