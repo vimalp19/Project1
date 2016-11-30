@@ -39,7 +39,7 @@
                 $("#assignment").one ('click', function(){
                     $("#assignmentForm").append(assignmentName);
                     $("#assignmentForm").append(assignmentDescription);
-                    $("#assignmentForm").append(assignmentButtons);
+                    $("#assignmentForm").appendTo(assignmentButtons);
                 });
                 
                 $("input#addquestion").one ('click', function(){
