@@ -42,8 +42,9 @@
                     $("#assignmentForm").append(assignmentButtons);
                 });
                 
-                $("#addquestion").one ('click', function(){
-                    $("#assignmentForm").append(test);
+                $("#addquestion").one ('click', '#assignmentForm', function(e){
+                    e.preventDefault();
+                    $(this).append(test);
                 });
                 
             });
