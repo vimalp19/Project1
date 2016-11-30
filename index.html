@@ -36,7 +36,7 @@
                 var assignmentButtons = '<div class="form-group" id="cancelOrContinue"> <div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-4"> <label id="add" class="checkbox-inline" for="addQuestion"> <input class="btn btn-success" type="button" name="addquestion" id="addquestion" value="Add Question"> </label> <label id="cancel" class="checkbox-inline" for="cancelAssignment"> <input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel"> </label> </div> </div>';
                 var test = '<p>HELLO</p>';
                 
-                $("#assignment").click (function(){
+                $("#assignment").one ('click', function(){
                     $("#assignmentForm").append(assignmentName);
                     $("#assignmentForm").append(assignmentDescription);
                     $("#assignmentForm").append(assignmentButtons);
