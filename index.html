@@ -55,6 +55,8 @@
                 $(".btn-success").one ('click', function(){
                     var id = $(this).attr('id');
                     
+                    $("#questionOptions").hide();
+                    
                     if (id == "new")
                         $(newQuestion).appendTo("#assignmentForm");
                         
