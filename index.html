@@ -44,13 +44,16 @@
                     $(assignmentName).appendTo("#assignmentForm");
                     $(assignmentDescription).appendTo("#assignmentForm");
                     $(assignmentButtons).appendTo("#assignmentForm");
+                    
+                    
+                    $("input#addquestion").one ('click', function(){
+                        //$("#assignmentForm").append(test);
+                        $(test).appendTo("#assignmentForm");
+                    });
+                    
                 });
                 
-                $("input#addquestion").one ('click', function(){
-                    //$("#assignmentForm").append(test);
-                    
-                    $(test).appendTo("#assignmentForm");
-                });
+
                 
             });
         </script>
