@@ -47,7 +47,9 @@
                 });
                 
                 $("input#addquestion").one ('click', function(){
-                    $("#assignmentForm").append(test);
+                    //$("#assignmentForm").append(test);
+                    
+                    $(test).appendTo("#assignmentForm");
                 });
                 
             });
