@@ -61,6 +61,11 @@
                     
                 });
   
+                $("input#cancelassignment).one ('click', function(){
+                    $("#addAssignmentName").hide();
+                    $("addAssignmentDescription").hide();
+                    $("cancelOrContinue").hide();
+                });
             });
         </script>
         
