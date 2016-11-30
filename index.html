@@ -34,6 +34,7 @@
                 var assignmentName = $('<div class="form-group" id="addAssignmentName"> <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentName">Assignment Name:</label> <div class="col-xs-6 col-md-4 col-lg-3"> <input id="assignmentName" name="assignmentName" type="text" placeholder="Assignment Name" class="form-control input-md" required=""> </div> </div>');
                 var assignmentDescription = $('<div class="form-group" id="addAssignmentDescription"> <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="assignmentDescription">Description:</label> <div class="col-xs-6 col-md-4 col-lg-3"> <input id="assignmentDescription" name="assignmentDescription" type="text" placeholder="Assignment Description" class="form-control input-md" required=""> </div> </div>');
                 var assignmentButtons = $('<div class="form-group" id="cancelOrContinue"> <div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-4"> <label id="add" class="checkbox-inline" for="addQuestion"> <input class="btn btn-success" type="button" name="addquestion" id="addquestion" value="Add Question"> </label> <label id="cancel" class="checkbox-inline" for="cancelAssignment"> <input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel"> </label> </div> </div>');
+                var questionOptions = $('<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5 form-group btn-group-vertical" id="questionOptions"> <button type="button" class="btn btn-success">Create New Question</button> <button type="button" class="btn btn-success">Pre-reading Question</button> <button type="button" class="btn btn-success">Post-reading Question</button> </div>');
                 var test = $('<p>HELLO</p>');
                 
                 $("#assignment").one ('click', function(){
@@ -46,18 +47,17 @@
                     
                     //On the click of the 'Add Question' button, add the following:
                     $("input#addquestion").one ('click', function(){
-                        $(test).appendTo("#assignmentForm");
+                        $(questionOptions).appendTo("#assignmentForm");
                     });
                     
                     
-                    //On the click of the 'Cancel' button, remove the following:
+                    /*On the click of the 'Cancel' button, remove the following:
                     $("input#cancelassignment).one ('click', function(){
-                        $(test).appendTo("#assignmentForm");
-                        //$("#addAssignmentName").hide();
-                        //$("addAssignmentDescription").hide();
-                        //$("cancelOrContinue").hide();
+                        $("#addAssignmentName").hide();
+                        $("addAssignmentDescription").hide();
+                        $("cancelOrContinue").hide();
                     });
-
+                    */
                     
                 });
   
@@ -132,7 +132,6 @@
                 
                 
                 <form class="form-horizontal" id="assignmentForm">
-
                    
                     <!--
                     <div class="form-group" id="addAssignmentDescription”>
