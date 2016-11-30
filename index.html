@@ -46,14 +46,14 @@
                         
                 $("#assignment").on ('click', function(){
                     
-                    //if (showAssignmentDetails == 0) {
+                    if (showAssignmentDetails == 0) {
                         
                         $(assignmentName).appendTo("#assignmentForm");
                         $(assignmentDescription).appendTo("#assignmentForm");
                         $(assignmentButtons).appendTo("#assignmentForm");
                         
                         showAssignmentDetails = 1;
-                    //}
+                    }
                 
                     
                     //On the click of the 'Add Question' button, add the following:
@@ -62,21 +62,34 @@
                     
                         $("#questionOptions").hide();
                     
-                        if (id == "new")
+                        if (id == "new") {
                             $(newQuestion).appendTo("#assignmentForm");
-                        
-                        else if (id == "pre")
+                            $(answer).appendTo("#assignmentForm");
+                        }
+                            
+                        else if (id == "pre") {
                             $(prereadingQuestion).appendTo("#assignmentForm");
-                        
-                        else if (id == "during")
+                            $(answer).appendTo("#assignmentForm");
+                        }
+                            
+                        else if (id == "during") {
                             $(duringreadingQuestion).appendTo("#assignmentForm");
-                        
-                        else
+                            $(answer).appendTo("#assignmentForm");
+                        }
+                            
+                        else if (id == "post") {
                             $(postreadingQuestion).appendTo("#assignmentForm");
-                    
-                        $(answer).appendTo("#assignmentForm");
+                            $(answer).appendTo("#assignmentForm");
+                        } 
                     });
                
+                    
+                    $("#addquestion").click (function() {
+                        
+                        $(newQuestion).appendTo("#assignmentForm");
+                        $("#cancelOrContinue").hide();
+                    });
+                    
                     
                     //On the click of the 'Cancel' button, remove the following:
                     $("input#cancelassignment").click (function(){
@@ -85,8 +98,7 @@
                         
                         $("#addAssignmentName").hide();
                         $("#addAssignmentDescription").hide();
-                        $("#cancelOrContinue").hide();
-                    
+                        $("#cancelOrContinue").hide();      
                     });   
                 }); 
             });
