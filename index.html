@@ -44,7 +44,7 @@
                 var answer = $('<div class="form-group" id="addAnswer"> <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="Answer">Answer:</label> <div class="col-xs-6 col-md-4 col-lg-3"> <input id="answer" name="answer" type="text" placeholder="Answer" class="form-control input-md" required=""> </div> </div>');
                 var test = $('<p>HELLO</p>');
                         
-                $("#assignment").click (function(){
+                $("#assignment").on ('click', function(){
                     
                     //if (showAssignmentDetails == 0) {
                         
@@ -81,11 +81,12 @@
                     //On the click of the 'Cancel' button, remove the following:
                     $("input#cancelassignment").click (function(){
                     
+                        showAssignmentDetails = 0;
+                        
                         $("#addAssignmentName").hide();
                         $("#addAssignmentDescription").hide();
                         $("#cancelOrContinue").hide();
                     
-                        showAssignmentDetails = 0;
                     });   
                 }); 
             });
