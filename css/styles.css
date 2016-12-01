@@ -11,6 +11,7 @@ body {
 #prev, #next {
     padding-top: 25%; 
     background-color: red;
+    text-align: left;
 }
 
 .glyphicon {
