@@ -1,6 +1,6 @@
-            jQuery(function($){
-        
-                $("#assignment").click (function() {
+jQuery(function($) {
+            
+	$("#assignment").click (function() {
                     
                     var showAssignmentDetails = 0;
                
