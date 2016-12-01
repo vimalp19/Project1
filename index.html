@@ -12,14 +12,7 @@
         <script src="build/epub.min.js"></script>
 
         <!-- Zip JS -->
-        <script src="build/zip.min.js"></script>
-        
-        <!-- <style type="text/css">
-            body {
-                overflow: auto;
-                background: #eee;
-            }
-        </style> -->
+        <script src="build/zip.min.js"></script>  
         
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         
@@ -33,8 +26,8 @@
         <script>
             "use strict";
             var Book = ePub("./reader/moby-dick.epub", {
-              width: 400,
-              height: 500,
+              //width: 400,
+              //height: 500,
               spreads : false
             });
         </script>
@@ -76,6 +69,7 @@
 
             <div id="next" onclick="Book.nextPage();" class="reader col-xs-2 col-sm-2 col-lg-1">Next</div>
         </div>
+        
         <script>
             Book.renderTo("area");
         </script>
