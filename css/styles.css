@@ -18,6 +18,10 @@ body {
     font-size: 6.0vw;
 }
 
+.glyphicon:hover {
+    color: rgb(144, 146, 150);
+}
+
 #main {
     height: 100%;
     width: 75%;
