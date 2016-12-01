@@ -9,7 +9,8 @@ body {
 }
 
 #prev, #next {
-    padding-top: 25%;  
+    padding-top: 25%; 
+    background-color: red;
 }
 
 .glyphicon {
