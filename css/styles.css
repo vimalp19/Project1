@@ -12,6 +12,10 @@ body {
     padding-top: 25%;  
 }
 
+.glyphicon {
+    color: rgb(2, 110, 132);
+}
+
 #main {
     height: 100%;
     width: 75%;
