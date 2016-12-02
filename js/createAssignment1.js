@@ -20,8 +20,8 @@ jQuery(function($) {
     $('#addAssignmentDescription').hide();
     $('#cancelOrContinue').hide();
     
-    var questionCount = 0;
-    var answerCount = 0;
+    var questionCount = 1;
+    var answerCount = 1;
     var showAssignment = 0;
     
     
@@ -124,7 +124,7 @@ jQuery(function($) {
         $(newQuestion).appendTo("#assignmentForm");
         $('#newquestion').attr('id', question);
         
-        //$(answer).appendTo("#assignmentForm");
+        $(answer).appendTo("#assignmentForm");
         $('#answer').attr('id', newAnswer);
         
         questionCount++;
