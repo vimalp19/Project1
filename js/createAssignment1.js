@@ -23,9 +23,7 @@ jQuery(function($) {
             $('#cancelOrContinue').show();
         
             showAssignment = 1;
-        }
-            
-        alert (showAssignment);
+        }     
     });
     
     
