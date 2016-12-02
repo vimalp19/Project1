@@ -119,7 +119,7 @@ jQuery(function($) {
         var newAnswer = "answer" + answerCount;
         var newQuestion = $('<div class="form-group" id="addNewQuestion"> <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="newQuestion">New Question:</label> <div class="col-xs-6 col-md-4 col-lg-3"> <input id="newquestion" name="newquestion" type="text" placeholder="Question" class="form-control input-md" required=""> </div> </div>');
         
-        alert (question);
+        alert (question + "," + newAnswer);
         
         $(newQuestion).appendTo("#assignmentForm");
         $('#newquestion').attr('id', question);
