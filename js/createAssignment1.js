@@ -54,8 +54,6 @@ jQuery(function($) {
         $(prereadingButton).appendTo("#assignmentForm");
         $(duringreadingButton).appendTo("#assignmentForm");
         $(postreadingButton).appendTo("#assignmentForm");
-        
-        $("#cancelOrContinue").hide();
     });
     
     
