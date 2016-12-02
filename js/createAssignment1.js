@@ -57,7 +57,7 @@ jQuery(function($) {
     
     $(document).on ('click', '#addquestion', function() {
         
-        $(questionOptions).appendTo("#assignmentForm");
+        $(prereadingButton).appendTo("#assignmentForm");
         $("#cancelOrContinue").hide();
     });
     
