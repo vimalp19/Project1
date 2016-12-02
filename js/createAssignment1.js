@@ -71,7 +71,7 @@ jQuery(function($) {
         $(prereadingQuestion).appendTo("#assignmentForm");
         $('#prereadingquestion').attr('id', question);
         
-        $(answer).appendTo("#assignmentForm");
+        //$(answer).appendTo("#assignmentForm");
         $('#answer').attr('id', newAnswer);
         
         questionCount++;
@@ -88,7 +88,7 @@ jQuery(function($) {
         $(duringreadingQuestion).appendTo("#assignmentForm");
         $('#whilereadingquestion').attr('id', question);
         
-        $(answer).appendTo("#assignmentForm");
+        //$(answer).appendTo("#assignmentForm");
         $('#answer').attr('id', newAnswer);
         
         questionCount++;
@@ -105,7 +105,7 @@ jQuery(function($) {
         $(postreadingQuestion).appendTo("#assignmentForm");
         $('#postreadingquestion').attr('id', question);
         
-        $(answer).appendTo("#assignmentForm");
+        //$(answer).appendTo("#assignmentForm");
         $('#answer').attr('id', newAnswer);
         
         questionCount++;
@@ -124,7 +124,7 @@ jQuery(function($) {
         $(newQuestion).appendTo("#assignmentForm");
         $('#newquestion').attr('id', question);
         
-        $(answer).appendTo("#assignmentForm");
+        //$(answer).appendTo("#assignmentForm");
         $('#answer').attr('id', newAnswer);
         
         questionCount++;
