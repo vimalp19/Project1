@@ -19,4 +19,14 @@ jQuery(function($) {
             
         alert (showAssignment);
     });
+    
+    
+    $('input#cancelassignment').on('click', function() {
+    
+        $('#addAssignmentName').hide();
+        $('#addAssignmentDescription').hide();
+        $('#cancelOrContinue').hide();
+        
+    });
+    
 });
