@@ -4,10 +4,10 @@ jQuery(function($) {
     var assignmentDescription = $('<div class="form-group" id="addAssignmentDescription"> <label class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3 control-label" for="assignmentDescription">Description:</label> <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4"> <input id="assignmentDescription" name="assignmentDescription" type="text" placeholder="Assignment Description" class="form-control input-md" required=""> </div> </div>');
     var assignmentButtons = $('<div class="form-group" id="cancelOrContinue"> <div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-4"> <label id="add" class="checkbox-inline" for="addQuestion"> <input class="btn btn-success" type="button" name="addquestion" id="addquestion" value="Add Question"> </label> <label id="cancel" class="checkbox-inline" for="cancelAssignment"> <input class="btn btn-success" type="button" name="cancelassignment" id="cancelassignment" value="Cancel"> </label> </div> </div>');
     
-    var newQuestionButton = $('<div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="createNewQuestion"> <input class="btn btn-success" type="button" name="createNewQuestion" id="createNewQuestion" value="New Question"> </label> </div>');
+    var newQuestionButton = $('<br><br><div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="createNewQuestion"> <input class="btn btn-success" type="button" name="createNewQuestion" id="createNewQuestion" value="New Question"> </label> </div>');
     var prereadingButton = $('<div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="prereading"> <input class="btn btn-success" type="button" name="prereading" id="prereading" value="Pre-reading Question"> </label> </div>');
     var duringreadingButton = $('<div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="duringreading"> <input class="btn btn-success" type="button" name="duringreading" id="duringreading" value="During Reading Question"> </label> </div>');;
-    var postreadingButton = $('<div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="postreading"> <input class="btn btn-success" type="button" name="postreading" id="postreading" value="Post-reading Question"> </label> </div>');
+    var postreadingButton = $('<div class="form-group"><label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" for="postreading"> <input class="btn btn-success" type="button" name="postreading" id="postreading" value="Post-reading Question"> </label> </div><br><br>');
     
     
     var newQuestion = $('<div class="form-group" id="addNewQuestion"> <label class="col-xs-4 col-xs-offset-1 col-lg-2 col-lg-offset-3 control-label" for="newQuestion">New Question:</label> <div class="col-xs-6 col-md-4 col-lg-3"> <input id="newquestion" name="newquestion" type="text" placeholder="Question" class="form-control input-md" required=""> </div> </div>');
@@ -56,11 +56,11 @@ jQuery(function($) {
     
     
     $(document).on ('click', '#addquestion', function() {
-        
+
+        $(newQuestionButton).appendTo("#assignmentForm");        
         $(prereadingButton).appendTo("#assignmentForm");
         $(duringreadingButton).appendTo("#assignmentForm");
         $(postreadingButton).appendTo("#assignmentForm");
-        $(newQuestionButton).appendTo("#assignmentForm");
         
         $("#cancelOrContinue").hide();
     });
