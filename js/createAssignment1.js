@@ -21,7 +21,7 @@ jQuery(function($) {
     });
     
     
-    $('input#cancelassignment').on('click', function() {
+    $(document).on('click', 'input#cancelassignment', function() {
     
         $('#addAssignmentName').hide();
         $('#addAssignmentDescription').hide();
