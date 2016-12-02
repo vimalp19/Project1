@@ -27,6 +27,7 @@ jQuery(function($) {
         $('#addAssignmentDescription').hide();
         $('#cancelOrContinue').hide();
         
+        showAssignment = 0;
     });
     
 });
