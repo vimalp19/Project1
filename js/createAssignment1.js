@@ -87,7 +87,7 @@ jQuery(function($) {
     });
     
     
-    $(document).click ('#createNewQuestion', function() {
+    $(document).live ('click', '#createNewQuestion', function() {
         
         $(newQuestion).appendTo("#assignmentForm");
         $(answer).appendTo("#assignmentForm");
