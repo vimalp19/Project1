@@ -58,6 +58,10 @@ jQuery(function($) {
     $(document).on ('click', '#addquestion', function() {
         
         $(prereadingButton).appendTo("#assignmentForm");
+        $(duringreadingButton).appendTo("#assignmentForm");
+        $(postreadingButton).appendTo("#assignmentForm");
+        $(newQuestionButton).appendTo("#assignmentForm");
+        
         $("#cancelOrContinue").hide();
     });
     
@@ -69,9 +73,9 @@ jQuery(function($) {
     });
 
     
-    $(document).on ('click', '#postreading', function() {
+    $(document).on ('click', '#duringreading', function() {
         
-        $(postreadingQuestion).appendTo("#assignmentForm");
+        $(duringreadingQuestion).appendTo("#assignmentForm");
         $(answer).appendTo("#assignmentForm");
     });    
     
