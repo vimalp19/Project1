@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>FlypPage - Book Name</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- EPUBJS Renderer -->
+        <script src="./build/epub.min.js"></script>
+
+        <!-- Zip JS -->
+        <script src="./build/zip.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+
+        <!-- Application Personalized CSS -->
+        <link href="./css/styles.css" rel="stylesheet" type="text/css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- JS file used to dynamically create the create assignment form -->
+        <script src="./js/createAssignment.js"> </script>
+
+        <!-- Script to obtain the book that will be displayed onto this page -->
+        <script>
+            var url = window.location.href;
+            var passedbook = url.split("passedbook=").pop();
+            var Book = ePub(passedbook, {
+             width: 540,
+              height: 650,
+              spreads : false
+            });
+ //           Book.renderTo("area")
+        </script>
+        <script>
+            "use strict";
+//            var Book = ePub("./reader/AliceInWonderland.epub", {
+//              width: 540,
+ //             height: 650,
+ //             spreads : false
+ //           });
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Navigation bar at the top of the webpage -->
+        <nav class="navbar navbar-inverse navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Previously assigned to studentHome.html, unnecessary -->
+                    <a class="navbar-brand" href="#">FlypPage</a>
+                </div>
+                <div class="collapse navbar-collapse" id="inverseNavbar1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <!-- Either used to bring you to account page OR just display login ID -->
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <!-- Logout AND bring back to login page -->
+                            <a href="index.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <!-- Hold the button to go back a page in the book -->
+        <div id="prev" onclick="Book.prevPage();" class="reader col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        </div>
+
+        <!-- Display the book onto this <div> -->
+        <div id="area" class = "reader col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
+
+        <!-- Hold the button to go foward a page in the book -->
+        <div id="next" onclick="Book.nextPage();" class="reader col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </div>
+
+        <!-- Render the book onto the intended <div> -->
+        <script>
+            Book.renderTo("area");
+        </script>
+
+        <br><br><br>
+
+        <!-- Button to allow for creating a new assignment -->
+        <div class="row">
+            <label class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5 checkbox-inLine" for="assignment">
+                <input class="btn btn-success btn-lg" type="button" name="assignment" id="assignment" value="New Assignment">
+            </label>
+        </div>
+
+        <br>
+
+        <!-- Hold the form to create the assignment -->
+        <div class="row">
+            <form class="form-horizontal" id="assignmentForm" action="teacherHome.html"></form>
+        </div>
+
+        <br>
+
+        <footer>Copyright &copy; FlypPage 2016</footer>
+
+    </body>
+</html>
